@@ -1,0 +1,104 @@
+{
+    "Software": [
+        {
+            "Chrome": [
+                {
+                    "description": "Google Chrome is a cross-platform web browser developed by Google.",
+                    "Upgrade": "choco upgrade googlechrome",
+                    "Install": "choco Install googlechrome --confirm"
+                }
+            ],
+            "Firefox": [
+                {
+                    "description": "Firefox",
+                    "Upgrade": "choco upgrade firefox",
+                    "Install": "choco Install firefox --confirm"
+                }
+            ],
+            "Python": [
+                {
+                    "description": "Python",
+                    "Upgrade": "choco upgrade python",
+                    "Install": "choco Install python --confirm"
+                }
+            ],
+            "Vscode": [
+                {
+                    "description": "Vscode",
+                    "Upgrade": "choco upgrade vscode",
+                    "Install": "choco Install vscode --confirm"
+                }
+            ],
+            "Putty": [
+                {
+                    "description": "Putty",
+                    "Upgrade": "choco upgrade Putty",
+                    "Install": "choco install putty --confirm"
+                }
+            ],
+            "vagrant": [
+                {
+                    "description": "vagrant",
+                    "Upgrade": "choco Upgrade vagrant",
+                    "Install": "choco install vagrant --confirm"
+                }
+            ],
+            "mobaxterm": [
+                {
+                    "description": "mobaxterm",
+                    "Upgrade": "choco upgrade mobaxterm",
+                    "Install": "choco install mobaxterm --confirm"
+                }
+            ],
+            "Slack": [
+                {
+                    "description": "Slack",
+                    "Upgrade": "choco Upgrade slack",
+                    "Install": "choco install slack --confirm"
+                }
+            ],
+            "Agentransack": [
+                {
+                    "description": "Agentransack",
+                    "Upgrade": "choco Upgrade agentransack",
+                    "Install": "choco install agentransack --confirm"
+                }
+            ]
+        }
+    ],
+    "Switch": [
+        {
+            "MSI": [
+                {
+                    "Install_Normal": "msiexec.exe /i",
+                    "Install_Admin": "msiexec.exe /a",
+                    "Uninstall": "msiexec.exe /x",
+                    "Param": [
+                        {
+                            "Quiet": "/quiet",
+                            "Progress": "/passive",
+                            "UI": [
+                                {
+                                    "No_UI": "qn",
+                                    "Dialog": "qn+",
+                                    "Basic": "qb",
+                                    "UI+": "qb+",
+                                    "UI-": "qb-",
+                                    "UIR": "qr",
+                                    "Full": "qf"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "Choco": [
+                {
+                    "Install_confirm": "--confirm",
+                    "Install_Force": "msiexec.exe /a",
+                    "Install_Limitoutput": "--limitoutput"
+                }
+            ]
+        }
+    ]
+}
